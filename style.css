@@ -1,0 +1,63 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > * {
+padding: 10px;
+margin: 10px;
+border-radius: 10px;
+flex: 1 100%;
+}
+
+header{
+    background: greenyellow;
+    height: 100px;
+}
+
+.nav{
+    background: orange;
+    height: 80px;
+}
+
+.footer{
+    background: teal;
+    height: 60px;
+}
+
+.main{
+    background: greenyellow;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.aside{
+    background: turquoise;
+}
+
+/*tampilan responsinve */
+@media all and (min-width: 670px){
+    .main{
+        flex: 2;
+    }
+    .aside1{
+        order: 2;
+    }
+    .main{
+        order: 1;
+    }
+    .footer{
+    order: 4;
+    }
+}
+
+@media all and (min-width: 300px){
+    .aside1 {
+        flex: 1;
+    }
+}
